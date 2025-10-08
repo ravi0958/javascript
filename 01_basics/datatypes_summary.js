@@ -42,4 +42,23 @@ const myFunctions=function(){
 }
 
 
+//======================================================
+
+//stack(Primitive), Heap(Non- Primitive)
+
+let myName="Ravi kumar"
+let anotherName="ravi"
+// console.log(myName);
+// console.log(anotherName);
+
+let userOne={
+    userEmail:"acb@gmail.com",
+    upiId:"9507851787@ybl"
+}
+let userTwo=userOne
+userTwo.userEmail="user@gmail.com"
+
+console.log(userOne.userEmail);
+console.log(userTwo.userEmail);
+
 
