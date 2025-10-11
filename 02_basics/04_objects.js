@@ -35,8 +35,8 @@ const obj2={
 }
 //const obj3={obj1obj2}
 //const obj3=Object.assign({}/*<-- target*/ ,obj1,obj2 /*<--- source*/)
-const obj3={...obj1,...obj2}
-console.log(obj3);
+// const obj3={...obj1,...obj2}
+// console.log(obj3);
 
 
 //array of object
@@ -61,7 +61,20 @@ const users=[
 // console.log(users[1].email)
 // console.log(users[2].email)
 
-console.log(Object.keys(tinder))
-console.log(Object.values(tinder))
-console.log(Object.entries(tinder))
-console.log(tinder.hasOwnProperty("email"));
+// console.log(Object.keys(tinder))
+// console.log(Object.values(tinder))
+// console.log(Object.entries(tinder))
+// console.log(tinder.hasOwnProperty("email"));
+
+//Destructure
+
+const course={
+    courseName:"JS",
+    coursePrice:999,
+    courseInstructor:"Hitesh"
+}
+
+// console.log(course.courseInstructor)
+
+const {courseInstructor :Instructor}=course
+console.log(Instructor);
